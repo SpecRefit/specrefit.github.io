@@ -16,7 +16,7 @@ Visit http://localhost:4174. Check narrow and wide screens, both color themes, k
 
 ## Publishing
 
-GitHub Pages serves `main` at `/`. The custom domain is `specrefit.dev`; enforce HTTPS once GitHub has provisioned the certificate. DNS is managed at TransIP. The read-only viewer at `play.specrefit.dev` is separately published by the product repository after successful main builds. This website links to it but does not deploy it.
+GitHub Pages serves `main` at `/`. The custom domain is `specrefit.dev`; enforce HTTPS once GitHub has provisioned the certificate. DNS is managed at TransIP. The development editor at `play.specrefit.dev` is separately published by the product repository after successful main builds. This website links to it but does not deploy it.
 
 ## Brand
 
@@ -26,4 +26,6 @@ Image prompt: “Use case: background-extraction. Edit target: attached approved
 
 ## Download availability
 
-The landing page links to https://github.com/SpecRefit/specrefit/releases/tag/development for successful development builds. Currently only browser files and an experimental Linux x64 desktop bundle are available. Keep unavailable platforms and stable releases explicit. There is one rolling development prerelease, replaced after successful main builds. GitHub Latest is reserved for future stable releases. The hosted playground was verified on 2026-10-02 after [the first deployment](https://github.com/SpecRefit/specrefit/actions/runs/37063276439): HTTPS, commit-derived version, example navigation and local contract import passed in Chromium under WSL, with no contract upload observed. The website links to that preview and shows a teal GitHub ribbon on screens at least 1400px wide; narrower screens retain the navigation link. Both themes, wide/narrow layouts and keyboard interaction were checked.
+The landing page links to https://github.com/SpecRefit/specrefit/releases/tag/development for successful development builds. Release 0.1.0 provides browser assets and portable Windows x64, macOS Apple Silicon/Intel and Linux x64 desktop packages. The primary download links to https://github.com/SpecRefit/specrefit/releases/latest; the development link remains separate. There is one rolling development prerelease, replaced after successful main builds. GitHub Latest points to the versioned release. Windows is unsigned and macOS is not notarized; release notes describe support limits. The hosted playground was verified on 2026-10-02 after [the first deployment](https://github.com/SpecRefit/specrefit/actions/runs/37063276439): HTTPS, commit-derived version, example navigation and local contract import passed in Chromium under WSL, with no contract upload observed. The website links to that preview and shows a teal GitHub ribbon on screens at least 1400px wide; narrower screens retain the navigation link. Both themes, wide/narrow layouts and keyboard interaction were checked.
+
+The 0.1.0 landing-page update was checked in Chromium under WSL at 390px and 1440px, in both themes, including release/preview links, layout overflow, keyboard theme switching and the illustrative media toggle.

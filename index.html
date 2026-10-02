@@ -25,12 +25,12 @@
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> OPENAPI TOOLING · IN DEVELOPMENT</p>
+        <p class="eyebrow"><span class="status-dot"></span> OPENAPI TOOLING · VERSION 0.1.0</p>
         <h1 id="hero-title">Your API contract.<br><span>Made to fit.</span></h1>
         <p class="intro">Understand the spec you're given.<br>Shape the contract your project needs.</p>
-        <p class="description">A visual workspace for inspecting, adapting and validating OpenAPI specifications. Save your decisions as repeatable rules, ready for the next version.</p>
-        <div class="actions"><a class="button primary" href="https://github.com/SpecRefit/specrefit/releases/tag/development">Download preview <span aria-hidden="true">↗</span></a><a class="text-link" href="https://play.specrefit.dev/">Try the playground <span aria-hidden="true">↗</span></a></div>
-        <p class="availability">Read-only viewer preview available for browser and Linux.<br>Development builds are experimental. No stable release yet.</p>
+        <p class="description">A local workspace for inspecting and adapting OpenAPI specifications. Choose media types, extract shared models and bundle references, then review and export your changes.</p>
+        <div class="actions"><a class="button primary" href="https://github.com/SpecRefit/specrefit/releases/latest">Download 0.1.0 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://play.specrefit.dev/">Try the playground <span aria-hidden="true">↗</span></a></div>
+        <p class="availability">Available for Windows, macOS and Linux, with bundled runtimes.<br>First 0.x release · unsigned Windows packages · macOS not notarized.</p>
       </div>
       <div class="contract-card" aria-label="Illustration of a repeatable JSON preference rule">
         <div class="card-top"><span><span class="window-dot"></span> contract / preview</span><span class="tag">ILLUSTRATION</span></div>
@@ -44,27 +44,27 @@
     </section>
     <div class="principles wrap"><span>Built for developers</span><span>Local execution by design</span><span>Rules you can version</span></div>
     <section class="approach wrap" id="downloads" aria-labelledby="downloads-title">
-      <div class="section-heading"><p class="eyebrow">TRY THE CURRENT PREVIEW</p><h2 id="downloads-title">Start with inspection.</h2><p>Open local YAML or JSON contracts, browse operations and schemas, and follow references. Editing, transformations and export are still planned.</p></div>
+      <div class="section-heading"><p class="eyebrow">GET SPECREFIT</p><h2 id="downloads-title">Inspect. Adapt. Export.</h2><p>Open local YAML or JSON contracts, inspect operations and schemas, choose transformations and export the reviewed result.</p></div>
       <div class="steps">
-        <article><span class="step-number">DEVELOPMENT DOWNLOADS</span><h3>Fresh from main.</h3><p>Successful main builds publish browser files and an experimental Linux x64 desktop bundle with its own runtime. One rolling preview always contains the newest verified downloads, with checksums and build details.</p><p><a class="text-link" href="https://github.com/SpecRefit/specrefit/releases/tag/development">Current development preview ↗</a></p></article>
-        <article><span class="step-number">BROWSER PREVIEW</span><h3>Your files stay local.</h3><p>Try the read-only viewer in your browser. Contract files stay on your device; no account or installation is needed. Reloading clears the inspection session.</p><p><a class="text-link" href="https://play.specrefit.dev/">Open the playground ↗</a></p></article>
-        <article><span class="step-number">STABLE RELEASES</span><h3>Still ahead.</h3><p>No stable release is available yet. Stable downloads will appear here when ready. Windows and macOS packages, the CLI and Maven Central artifacts remain planned.</p><p><a class="text-link" href="https://github.com/SpecRefit/specrefit/blob/main/ROADMAP.md">See the roadmap ↗</a></p></article>
+        <article><span class="step-number">DEVELOPMENT DOWNLOADS</span><h3>Fresh from main.</h3><p>Successful main builds publish browser files and runtime-inclusive Windows, macOS and Linux packages. One rolling preview always contains the newest verified downloads, with checksums and build details.</p><p><a class="text-link" href="https://github.com/SpecRefit/specrefit/releases/tag/development">Current development preview ↗</a></p></article>
+        <article><span class="step-number">BROWSER PREVIEW</span><h3>Your files stay local.</h3><p>Try the current development editor in your browser. Contract files stay on your device; no account or installation is needed. Reloading clears the session.</p><p><a class="text-link" href="https://play.specrefit.dev/">Open the playground ↗</a></p></article>
+        <article><span class="step-number">STABLE RELEASES</span><h3>Version 0.1.0.</h3><p>Download Windows x64, macOS Apple Silicon or Intel, Linux x64, or browser assets. Release notes include checksums, startup instructions and current support limits. Installers, CLI and Maven artifacts remain planned.</p><p><a class="text-link" href="https://github.com/SpecRefit/specrefit/releases/latest">Latest release ↗</a></p></article>
       </div>
     </section>
     <section class="approach wrap" id="approach" aria-labelledby="approach-title">
       <div class="section-heading"><p class="eyebrow">FROM SPECIFICATION TO PROJECT</p><h2 id="approach-title">Keep the contract.<br>Make the choices explicit.</h2><p>Contract changes should be understandable, reviewable and reproducible.</p></div>
       <div class="steps">
         <article><span class="step-number">01 / INSPECT</span><h3>See how it fits together.</h3><p>Explore operations, schemas, references and security requirements. Understand what goes in, what comes out and where the contract needs attention.</p></article>
-        <article><span class="step-number">02 / REFIT</span><h3>Choose what you need.</h3><p>Start with JSON preferences and explicit exceptions. Review the effect of each rule before exporting an adapted specification.</p></article>
-        <article><span class="step-number">03 / REPEAT</span><h3>Carry your decisions forward.</h3><p>Keep the rules in your project. Reapply them to incoming contract versions, with clear feedback when something no longer matches.</p></article>
+        <article><span class="step-number">02 / REFIT</span><h3>Choose what you need.</h3><p>Select one or more media types, extract shared models and bundle external references. Review the effect of each rule before exporting an adapted specification.</p></article>
+        <article><span class="step-number">03 / REPEAT</span><h3>Carry your decisions forward.</h3><p>Next: save rules in your project and replay them against incoming contract versions. Project configuration and CLI replay are planned.</p></article>
       </div>
     </section>
     <section class="workflow wrap" aria-labelledby="workflow-title">
       <div><p class="eyebrow">DESIGNED FOR YOUR TOOLCHAIN</p><h2 id="workflow-title">Visual choices.<br>Repeatable builds.</h2><p>The editor will save a <code>specrefit.yaml</code> configuration. The planned Maven plugin will apply those rules during your build and hand the resulting OpenAPI contract to Fabrikt or another generator.</p><p class="muted">The output remains an OpenAPI specification.</p></div>
       <ol class="pipeline" aria-label="Planned processing pipeline"><li><span>01</span><div><strong>Source contract</strong><code>OpenAPI specification</code></div></li><li><span>02</span><div><strong>SpecRefit + your rules</strong><code>specrefit.yaml</code></div></li><li><span>03</span><div><strong>Adapted contract</strong><code>Ready for your generator</code></div></li></ol>
     </section>
-    <section class="local wrap" aria-labelledby="local-title"><div><p class="eyebrow">YOUR CONTRACTS, YOUR ENVIRONMENT</p><h2 id="local-title">Local comes first.</h2></div><div><p>The current viewer processes contracts locally, without telemetry or a required account. Standalone Windows and macOS packages are planned alongside the experimental Linux build.</p><p class="muted">Supply referenced files yourself in this preview. Optional, explicitly configured network retrieval remains planned.</p></div></section>
-    <section class="closing wrap"><div><p class="eyebrow">FOLLOW THE PROJECT</p><h2>Let's make contracts fit.</h2><p>SpecRefit is taking shape. Follow the project as the first workflow becomes a working tool.</p></div><a class="button primary" href="https://github.com/SpecRefit">SpecRefit on GitHub <span aria-hidden="true">↗</span></a></section>
+    <section class="local wrap" aria-labelledby="local-title"><div><p class="eyebrow">YOUR CONTRACTS, YOUR ENVIRONMENT</p><h2 id="local-title">Local comes first.</h2></div><div><p>The browser and desktop editor process contracts locally, without telemetry or a required account. Windows, macOS and Linux packages include their runtime.</p><p class="muted">Supply referenced files yourself in this preview. Optional, explicitly configured network retrieval remains planned.</p></div></section>
+    <section class="closing wrap"><div><p class="eyebrow">FOLLOW THE PROJECT</p><h2>Let's make contracts fit.</h2><p>Try the first release and follow the next steps toward saved projects and repeatable builds.</p></div><a class="button primary" href="https://github.com/SpecRefit">SpecRefit on GitHub <span aria-hidden="true">↗</span></a></section>
   </main>
   <footer class="wrap"><div><a href="./" class="footer-name">Spec<span>Refit</span></a><p>Shape OpenAPI contracts for your project.</p></div><div class="footer-meta"><a href="https://github.com/SpecRefit/specrefit.github.io">Website source ↗</a><p>No analytics or tracking scripts.<br>Hosted on GitHub Pages, which <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">logs visitor IPs for security</a>.</p></div></footer>
 </body>
