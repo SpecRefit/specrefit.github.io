@@ -16,7 +16,7 @@ Visit http://localhost:4174. Check narrow and wide screens, both color themes, k
 
 ## Publishing
 
-GitHub Pages serves `main` at `/`. The custom domain is `specrefit.dev`; enforce HTTPS once GitHub has provisioned the certificate. DNS is managed at TransIP. `play.specrefit.dev` is reserved for a separately published editor and is not deployed by this repository.
+GitHub Pages serves `main` at `/`. The custom domain is `specrefit.dev`; enforce HTTPS once GitHub has provisioned the certificate. DNS is managed at TransIP. The read-only viewer at `play.specrefit.dev` is separately published by the product repository after successful main builds. This website links to it but does not deploy it.
 
 ## Brand
 
@@ -26,4 +26,4 @@ Image prompt: “Use case: background-extraction. Edit target: attached approved
 
 ## Download availability
 
-The landing page links to https://github.com/SpecRefit/specrefit/releases/latest for successful development builds. Currently only browser files and an experimental Linux x64 desktop bundle are available. Keep unavailable platforms and stable releases explicit. Before stable release publication, introduce separate persistent development and stable URLs with the product publisher; GitHub has only one Latest pointer. The hosted playground link should become active only after the product repository deployment has been verified.
+The landing page links to https://github.com/SpecRefit/specrefit/releases/latest for successful development builds. Currently only browser files and an experimental Linux x64 desktop bundle are available. Keep unavailable platforms and stable releases explicit. Before stable release publication, introduce separate persistent development and stable URLs with the product publisher; GitHub has only one Latest pointer. The hosted playground was verified on 2026-10-02 after [the first deployment](https://github.com/SpecRefit/specrefit/actions/runs/37063276439): HTTPS, commit-derived version, example navigation and local contract import passed in Chromium under WSL, with no contract upload observed. The website links to that preview and shows a teal GitHub ribbon on screens at least 1400px wide; narrower screens retain the navigation link. Both themes, wide/narrow layouts and keyboard interaction were checked.
