@@ -28,8 +28,8 @@
         <h1 id="hero-title">Your API contract.<br><span>Made to fit.</span></h1>
         <p class="intro">Understand the spec you're given.<br>Shape the contract your project needs.</p>
         <p class="description">A visual workspace for inspecting, adapting and validating OpenAPI specifications. Save your decisions as repeatable rules, ready for the next version.</p>
-        <div class="actions"><a class="button primary" href="https://github.com/SpecRefit">Follow on GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="#approach">Explore the approach <span aria-hidden="true">↓</span></a></div>
-        <p class="availability">Desktop, web and Maven integration are planned.<br>No public release yet.</p>
+        <div class="actions"><a class="button primary" href="https://github.com/SpecRefit/specrefit/releases/latest">Download development build <span aria-hidden="true">↗</span></a><a class="text-link" href="#downloads">What's available <span aria-hidden="true">↓</span></a></div>
+        <p class="availability">Read-only viewer preview available for browser and Linux.<br>Development builds are experimental. No stable release yet.</p>
       </div>
       <div class="contract-card" aria-label="Illustration of a repeatable JSON preference rule">
         <div class="card-top"><span><span class="window-dot"></span> contract / preview</span><span class="tag">ILLUSTRATION</span></div>
@@ -42,6 +42,14 @@
       </div>
     </section>
     <div class="principles wrap"><span>Built for developers</span><span>Local execution by design</span><span>Rules you can version</span></div>
+    <section class="approach wrap" id="downloads" aria-labelledby="downloads-title">
+      <div class="section-heading"><p class="eyebrow">TRY THE CURRENT PREVIEW</p><h2 id="downloads-title">Start with inspection.</h2><p>Open local YAML or JSON contracts, browse operations and schemas, and follow references. Editing, transformations and export are still planned.</p></div>
+      <div class="steps">
+        <article><span class="step-number">DEVELOPMENT DOWNLOADS</span><h3>Fresh from main.</h3><p>Successful main builds publish browser files and an experimental Linux x64 desktop bundle with its own runtime. Checksums and build details accompany every download.</p><p><a class="text-link" href="https://github.com/SpecRefit/specrefit/releases/latest">Latest development build ↗</a></p></article>
+        <article><span class="step-number">BROWSER PREVIEW</span><h3>Your files stay local.</h3><p>The browser viewer processes contracts on your device. For now, download the browser files and serve them locally. A hosted playground is being prepared at <code>play.specrefit.dev</code>.</p></article>
+        <article><span class="step-number">STABLE RELEASES</span><h3>Still ahead.</h3><p>No stable release is available yet. Stable downloads will appear here when ready. Windows and macOS packages, the CLI and Maven Central artifacts remain planned.</p><p><a class="text-link" href="https://github.com/SpecRefit/specrefit/blob/main/ROADMAP.md">See the roadmap ↗</a></p></article>
+      </div>
+    </section>
     <section class="approach wrap" id="approach" aria-labelledby="approach-title">
       <div class="section-heading"><p class="eyebrow">FROM SPECIFICATION TO PROJECT</p><h2 id="approach-title">Keep the contract.<br>Make the choices explicit.</h2><p>Contract changes should be understandable, reviewable and reproducible.</p></div>
       <div class="steps">
@@ -54,7 +62,7 @@
       <div><p class="eyebrow">DESIGNED FOR YOUR TOOLCHAIN</p><h2 id="workflow-title">Visual choices.<br>Repeatable builds.</h2><p>The editor will save a <code>specrefit.yaml</code> configuration. The planned Maven plugin will apply those rules during your build and hand the resulting OpenAPI contract to Fabrikt or another generator.</p><p class="muted">The output remains an OpenAPI specification.</p></div>
       <ol class="pipeline" aria-label="Planned processing pipeline"><li><span>01</span><div><strong>Source contract</strong><code>OpenAPI specification</code></div></li><li><span>02</span><div><strong>SpecRefit + your rules</strong><code>specrefit.yaml</code></div></li><li><span>03</span><div><strong>Adapted contract</strong><code>Ready for your generator</code></div></li></ol>
     </section>
-    <section class="local wrap" aria-labelledby="local-title"><div><p class="eyebrow">YOUR CONTRACTS, YOUR ENVIRONMENT</p><h2 id="local-title">Local comes first.</h2></div><div><p>We are designing SpecRefit for standalone use on Windows, macOS and Linux, without telemetry or a required account. The optional web editor is planned to process contracts in your browser.</p><p class="muted">Explicitly configured references may use your network. Internal hosting and local execution remain part of the design.</p></div></section>
+    <section class="local wrap" aria-labelledby="local-title"><div><p class="eyebrow">YOUR CONTRACTS, YOUR ENVIRONMENT</p><h2 id="local-title">Local comes first.</h2></div><div><p>The current viewer processes contracts locally, without telemetry or a required account. Standalone Windows and macOS packages are planned alongside the experimental Linux build.</p><p class="muted">Supply referenced files yourself in this preview. Optional, explicitly configured network retrieval remains planned.</p></div></section>
     <section class="closing wrap"><div><p class="eyebrow">FOLLOW THE PROJECT</p><h2>Let's make contracts fit.</h2><p>SpecRefit is taking shape. Follow the project as the first workflow becomes a working tool.</p></div><a class="button primary" href="https://github.com/SpecRefit">SpecRefit on GitHub <span aria-hidden="true">↗</span></a></section>
   </main>
   <footer class="wrap"><div><a href="./" class="footer-name">Spec<span>Refit</span></a><p>Shape OpenAPI contracts for your project.</p></div><div class="footer-meta"><a href="https://github.com/SpecRefit/specrefit.github.io">Website source ↗</a><p>No analytics or tracking scripts.<br>Hosted on GitHub Pages, which <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">logs visitor IPs for security</a>.</p></div></footer>
